@@ -1,5 +1,6 @@
 # SmtGdn
 Fall 2020 CSE521s Final Project Repository
+
 To set up Data Hub:
 1)Upload python program “smtGdnDS.py” to a processor with ethernet capabilities. In the initial experimental setup, a Raspberry Pi B+ was used. 
 2)In the python program, a few variables need to be changed to identify the station.
@@ -8,7 +9,7 @@ To set up Data Hub:
 3)Execute the program with python3. 
 4)Several messages from the program indicate setup and server events. Once the message “Server listening for events” appears, the server is ready to accept new connections. When it connects to a Garden station, this server will automatically give the garden station a unique station ID and upload any messages to Amazon aws. This process will continue until powered off
 
-How to set up Garden Station
+How to set up Garden Station:
 1)On a computer, open the program “ArduinoSoilSensorEthernetV4.ino” in the Ardunio IDE.
 2)On line 9, the ‘ip’ variable must be changed to have a unique Id on the ethernet network.
 3)On line 10, the ‘serverip’ variable must be changed to match the ip address of the server (specified in “smtGdnDS.py”).
